@@ -47,20 +47,4 @@ public class User {
                 ", basket=" + basket +
                 '}';
     }
-
-    public static void main(String[] args) {
-        User user1 = new User("timofeiroslik@gmail.com", "trap2020", new Basket(new String[]{"pork," +
-                " bananas"}));
-        User user2 = new User("rybak@gmail.com", "trap2021", new Basket(new String[]{"apples, " +
-                "beef"}));
-        User user3 = new User("malyshka@gmail.com", "trap2022", new Basket(new String[]{"lamb," +
-                " pineapples"}));
-        System.out.println("user1 = " + user1);
-        System.out.println("user2 = " + user2);
-        System.out.println("user3 = " + user3);
-
-    }
-
-
-
 }

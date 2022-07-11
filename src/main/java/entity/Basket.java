@@ -3,21 +3,23 @@ package entity;
 import java.util.Arrays;
 
 public class Basket {
-    private String[] purchasedProducts;
+    private Product[] purchasedProducts;
 
     public Basket() {
 
     }
 
-    public Basket(String[] purchasedProducts) {
+    public Basket(Product[] purchasedProducts) {
         this.purchasedProducts = purchasedProducts;
     }
 
-    public String[] getPurchasedProducts() {
+    public Product[] getPurchasedProducts()
+    {
         return purchasedProducts;
     }
 
-    public void setPurchasedProducts(String[] purchasedProducts) {
+    public void setPurchasedProducts(Product[] purchasedProducts)
+    {
         this.purchasedProducts = purchasedProducts;
     }
 

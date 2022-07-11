@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class Category {
     private String name;
-    private String[] products;
+    private Product [] products;
 
     public Category() {
 
     }
 
-    public Category(String name, String[] products) {
+    public Category(String name, Product[] products) {
         this.name = name;
         this.products = products;
     }
@@ -23,11 +23,12 @@ public class Category {
         this.name = name;
     }
 
-    public String[] getProducts() {
+    public Product[] getProducts() {
         return products;
     }
 
-    public void setProducts(String[] products) {
+    public void setProducts(Product[] products)
+    {
         this.products = products;
     }
 
@@ -39,12 +40,4 @@ public class Category {
                 '}';
     }
 
-    public static void main(String[] args) {
-        Category category1 = new Category("Fruits:", new String[]{"Bananas, Apples, Pineapples"});
-        Category category2 = new Category("Vegetables:",new String[]{"Tomatoes, Cucumbers, Potatoes"});
-        Category category3 = new Category("Meat:", new String[]{"Pork, beef, lamb"});
-        System.out.println("category1 - " + category1);
-        System.out.println("category2 - " + category2);
-        System.out.println("category3 - " + category3);
-    }
 }
